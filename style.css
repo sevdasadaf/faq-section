@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: linear-gradient(0deg, hsl(240deg, 73%, 65%) 0%, hsl(273deg, 75%, 66%) 100%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.faq {
+  width: 80%;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: hsl(240deg, 5%, 91%);
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.faq-left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  left: -11%;
+}
+.faq-left .box {
+  display: flex;
+  position: absolute;
+  top: 41%;
+  left: 2%;
+  z-index: 2;
+  width: 100%;
+  height: 11rem;
+}
+.faq-left .box img {
+  width: 35%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.faq-left .bg-pattern {
+  display: flex;
+  height: 35rem;
+  width: 100%;
+  position: absolute;
+  bottom: -20%;
+  left: 2%;
+  width: 100%;
+}
+.faq-left .bg-pattern img {
+  width: 100%;
+}
+.faq-left .woman {
+  display: flex;
+  height: 25rem;
+  width: 100%;
+  z-index: 1;
+}
+.faq-left .woman img {
+  width: 100%;
+}
+
+.faq-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 2rem;
+}
+.faq-right h1 {
+  font-family: "Kumbh Sans", sans-serif;
+  color: hsl(238deg, 29%, 16%);
+}
+
+.question-faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-family: "Kumbh Sans", sans-serif;
+  color: hsl(240deg, 6%, 50%);
+  border-bottom: 1px solid hsl(240deg, 6%, 50%);
+}
+.question-faq .question {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.question-faq .question:hover {
+  color: hsl(14deg, 88%, 65%);
+}
+.question-faq img {
+  display: flex;
+  align-self: center;
+  cursor: pointer;
+}
+.question-faq .answer {
+  display: none;
+}
+
+.question-active {
+  font-weight: 700;
+  color: hsl(238deg, 29%, 16%);
+}
+
+.answer-active {
+  padding-bottom: 1rem;
+  display: flex;
+  text-justify: auto;
+}
+
+.arrow-active {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 760px) {
+  .faq {
+    display: flex;
+    flex-direction: column;
+  }
+  .faq-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .faq-right {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
